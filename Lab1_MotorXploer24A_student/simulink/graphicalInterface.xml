@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GraphicalInterface>
+  <P Name="NumRootInports">0</P>
+  <P Name="NumRootOutports">0</P>
+  <P Name="ParameterArgumentNames"/>
+  <P Name="NumModelReferences">0</P>
+  <P Name="NumTestPointedSignals">5</P>
+  <TestPointedSignal>
+    <P Name="SignalName">wcs2_raw_volt</P>
+    <P Name="FullBlockPath">$bdroot/Host Serial Rx1</P>
+    <P Name="PortIndex">3</P>
+    <P Name="LogSignal">1</P>
+    <P Name="MaxPoints">5000</P>
+    <P Name="Decimation">2</P>
+  </TestPointedSignal>
+  <TestPointedSignal>
+    <P Name="SignalName">pps</P>
+    <P Name="FullBlockPath">$bdroot/Host Serial Rx1</P>
+    <P Name="PortIndex">6</P>
+    <P Name="LogSignal">1</P>
+    <P Name="MaxPoints">5000</P>
+    <P Name="Decimation">2</P>
+  </TestPointedSignal>
+  <TestPointedSignal>
+    <P Name="SignalName">step6V</P>
+    <P Name="FullBlockPath">$bdroot/Step</P>
+    <P Name="LogSignal">1</P>
+    <P Name="MaxPoints">5000</P>
+    <P Name="Decimation">2</P>
+  </TestPointedSignal>
+  <TestPointedSignal>
+    <P Name="SignalName"/>
+    <P Name="FullBlockPath">$bdroot/rad</P>
+    <P Name="LogSignal">1</P>
+    <P Name="MaxPoints">5000</P>
+    <P Name="Decimation">2</P>
+  </TestPointedSignal>
+  <TestPointedSignal>
+    <P Name="SignalName"/>
+    <P Name="FullBlockPath">$bdroot/rad//s</P>
+    <P Name="LogSignal">1</P>
+    <P Name="MaxPoints">5000</P>
+    <P Name="Decimation">2</P>
+  </TestPointedSignal>
+  <P Name="NumProvidedFunctions">0</P>
+  <P Name="NumRequiredFunctions">0</P>
+  <P Name="NumResetEvents">0</P>
+  <P Name="HasInitializeEvent">0</P>
+  <P Name="HasTerminateEvent">0</P>
+  <P Name="NumDataStoreReferences">0</P>
+  <P Name="PreCompExecutionDomainType">Unset</P>
+  <P Name="UseModelRefSolver">0</P>
+  <P Name="SolverName">FixedStepAuto</P>
+  <P Name="IsExportFunctionModel">0</P>
+  <P Name="SimulinkSubDomainType">Simulink</P>
+  <P Name="NumParameterArguments">0</P>
+  <P Name="NumExternalFileReferences">8</P>
+  <ExternalFileReference>
+    <P Name="Reference">amg_usbconverter_n_connect_lib/Host Serial Rx</P>
+    <P Name="Path">$bdroot/Host Serial Rx1</P>
+    <P Name="SID">99</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">amg_usbconverter_n_connect_lib/Host Serial Setup</P>
+    <P Name="Path">$bdroot/Host Serial Setup</P>
+    <P Name="SID">101</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">amg_usbconverter_n_connect_lib/Host Serial Tx</P>
+    <P Name="Path">$bdroot/Host Serial Tx</P>
+    <P Name="SID">130</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Subsystem/Bit Shift</P>
+    <P Name="SID">103</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Subsystem/Bit Shift1</P>
+    <P Name="SID">104</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Subsystem/Bit Shift2</P>
+    <P Name="SID">105</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Subsystem/Bit Shift3</P>
+    <P Name="SID">106</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Subsystem/Bit Shift4</P>
+    <P Name="SID">107</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <P Name="OrderedModelArguments">1</P>
+</GraphicalInterface>

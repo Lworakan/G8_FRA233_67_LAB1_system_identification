@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 2049, 1105]</P>
+  <P Name="Open">on</P>
+  <Block BlockType="Inport" Name="Vin" SID="16">
+    <P Name="Position">[-15, -192, 15, -178]</P>
+    <P Name="ZOrder">356</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">input signal</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Gain" Name="Gain10" SID="61">
+    <P Name="Position">[255, -290, 340, -260]</P>
+    <P Name="ZOrder">378</P>
+    <P Name="Gain">motor_R</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">i</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Gain" Name="Gain11" SID="54">
+    <P Name="Position">[570, -293, 650, -257]</P>
+    <P Name="ZOrder">373</P>
+    <P Name="Gain">1/motor_J</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain12" SID="56">
+    <P Name="Position">[545, -350, 630, -320]</P>
+    <P Name="ZOrder">375</P>
+    <P Name="Gain">motor_B</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain13" SID="57">
+    <P Name="Position">[425, -288, 525, -262]</P>
+    <P Name="ZOrder">376</P>
+    <P Name="Gain">motor_Ke</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain8" SID="60">
+    <P Name="Position">[150, -335, 240, -305]</P>
+    <P Name="ZOrder">377</P>
+    <P Name="Gain">1/motor_L</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain9" SID="51">
+    <P Name="Position">[325, -368, 465, -322]</P>
+    <P Name="ZOrder">370</P>
+    <P Name="Gain">motor_Eff*motor_Ke</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator" SID="67">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[685, -350, 715, -320]</P>
+    <P Name="ZOrder">382</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator1" SID="68">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[695, -290, 725, -260]</P>
+    <P Name="ZOrder">383</P>
+  </Block>
+  <Block BlockType="Outport" Name="w" SID="18">
+    <P Name="Position">[1020, -192, 1050, -178]</P>
+    <P Name="ZOrder">358</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">185</P>
+    <P Name="Src">16#out:1</P>
+    <P Name="Dst">18#in:1</P>
+  </Line>
+</System>

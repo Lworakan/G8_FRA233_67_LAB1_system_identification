@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 2049, 1105]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">250</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">72</P>
+  <Block BlockType="SubSystem" Name="Brushed DC motor" SID="15">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[1470, 656, 1585, 744]</P>
+    <P Name="ZOrder">356</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Mask>
+      <Display RunInitForIconRedraw="off"/>
+    </Mask>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">omega_model</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_15"/>
+  </Block>
+  <Block BlockType="Reference" Name="Chirp Signal" SID="25">
+    <PortCounts out="1"/>
+    <P Name="Position">[1045, 1200, 1075, 1230]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Commented">on</P>
+    <P Name="LibraryVersion">6.1</P>
+    <P Name="SourceBlock">simulink/Sources/Chirp Signal</P>
+    <P Name="SourceType">chirp</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="f1">0.1</P>
+      <P Name="T">40</P>
+      <P Name="f2">5</P>
+      <P Name="VectorParams1D">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="28">
+    <P Name="Position">[1130, 1200, 1160, 1230]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Commented">on</P>
+    <P Name="Gain">12</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="20">
+    <PortCounts in="1"/>
+    <P Name="Position">[1715, 683, 1745, 717]</P>
+    <P Name="ZOrder">357</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-26.38033&apos;,&apos;MaxYLimReal&apos;,&apos;237.42293&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;237.42293&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 0.909803921568627 0.392156862745098;0.149019607843137 0.549019607843137 0.866666666666667;0.96078431372549 0.466666666666667 0.16078431372549;0.286274509803922 0.858823529411765 0.250980392156863;0.752941176470588 0.36078431372549 0.984313725490196;0.423529411764706 0.956862745098039 1;0.949019607843137 0.403921568627451 0.772549019607843],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;omega_model&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-26.38033&apos;,&apos;MaxYLimReal&apos;,&apos;237.42293&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;237.42293&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false,&apos;PreviousAutoscale&apos;,&apos;XY&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2024a&apos;)),&apos;Version&apos;,&apos;2024a&apos;,&apos;Position&apos;,[1 49 1706.66666666667 945.6])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="Source" SID="70">
+    <P Name="Position">[1310, 685, 1340, 715]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">0</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">input signal</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Line>
+    <P Name="Name">omega_model</P>
+    <P Name="ZOrder">25</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">15#out:1</P>
+    <P Name="Dst">20#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">29</P>
+    <P Name="Src">25#out:1</P>
+    <P Name="Dst">28#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">input signal</P>
+    <P Name="ZOrder">69</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">70#out:1</P>
+    <P Name="Dst">15#in:1</P>
+  </Line>
+  <Annotation SID="72">
+    <P Name="Name">Create motor model here !</P>
+    <P Name="Position">[1454, 624, 1601, 762]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">8</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+</System>

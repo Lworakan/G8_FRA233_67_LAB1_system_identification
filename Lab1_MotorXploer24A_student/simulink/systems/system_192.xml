@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -8, 1921, 1033]</P>
+  <P Name="ZoomFactor">200</P>
+  <Block BlockType="Inport" Name="wcs1_offset_volt" SID="193">
+    <P Name="Position">[45, 23, 75, 37]</P>
+    <P Name="ZOrder">100000</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">wcs1_offset_volt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="wcs2_offset_volt" SID="194">
+    <P Name="Position">[45, 68, 75, 82]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">wcs2_offset_volt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="DC torque_setpoint" SID="195">
+    <P Name="Position">[45, 128, 75, 142]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">DC torque_setpoint</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="DC PWM" SID="196">
+    <P Name="Position">[45, 188, 75, 202]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="DC Frequency" SID="197">
+    <P Name="Position">[45, 233, 75, 247]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="M0" SID="198">
+    <P Name="Position">[20, 313, 50, 327]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">6</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">M0</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="M1" SID="199">
+    <P Name="Position">[20, 373, 50, 387]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">7</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">M1</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="M2" SID="200">
+    <P Name="Position">[20, 433, 50, 447]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">M2</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="DIR" SID="201">
+    <P Name="Position">[20, 498, 50, 512]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">9</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">DIR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="EN" SID="202">
+    <P Name="Position">[20, 563, 50, 577]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">10</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">EN</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="Stepper Frequency" SID="203">
+    <P Name="Position">[60, 638, 90, 652]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">11</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Stepper Frequency</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Sum" Name="Add" SID="102">
+    <PortCounts in="5" out="1"/>
+    <P Name="Position">[500, 275, 535, 595]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+++++</P>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift" SID="103">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[225, 301, 275, 339]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">8.16</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">4</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">y</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift1" SID="104">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[225, 361, 275, 399]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">8.16</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">3</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">y</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift2" SID="105">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[225, 421, 275, 459]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">8.16</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">2</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">y</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift3" SID="106">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[225, 486, 275, 524]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">8.16</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">1</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">y</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift4" SID="107">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[225, 551, 275, 589]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">8.16</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">0</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">y</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion1" SID="112">
+    <P Name="Position">[1035, 590, 1110, 610]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">int32</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">DC Frequency</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion10" SID="113">
+    <P Name="Position">[160, 557, 195, 583]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion11" SID="190">
+    <P Name="Position">[1045, 115, 1120, 135]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">single</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">wcs2_offset_volt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion12" SID="191">
+    <P Name="Position">[950, 20, 1025, 40]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">single</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">wcs1_offset_volt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion2" SID="114">
+    <P Name="Position">[1035, 495, 1110, 515]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">int32</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">DC PWM</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion3" SID="115">
+    <P Name="Position">[1045, 210, 1120, 230]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">single</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">DC torque_setpoint</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion4" SID="116">
+    <P Name="Position">[705, 305, 780, 325]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Stepper Config</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion5" SID="117">
+    <P Name="Position">[1035, 400, 1110, 420]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">int32</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Stepper Frequency</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion6" SID="118">
+    <P Name="Position">[160, 307, 195, 333]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion7" SID="119">
+    <P Name="Position">[160, 367, 195, 393]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion8" SID="120">
+    <P Name="Position">[160, 427, 195, 453]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion9" SID="121">
+    <P Name="Position">[160, 492, 195, 518]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Display" Name="Display10" SID="122">
+    <PortCounts in="1"/>
+    <P Name="Position">[335, 365, 425, 395]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Format">binary (Stored Integer)</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display11" SID="123">
+    <PortCounts in="1"/>
+    <P Name="Position">[335, 425, 425, 455]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Format">binary (Stored Integer)</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display12" SID="124">
+    <PortCounts in="1"/>
+    <P Name="Position">[340, 490, 430, 520]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Format">binary (Stored Integer)</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display13" SID="125">
+    <PortCounts in="1"/>
+    <P Name="Position">[340, 555, 430, 585]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Format">binary (Stored Integer)</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display14" SID="126">
+    <PortCounts in="1"/>
+    <P Name="Position">[650, 420, 740, 450]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Format">binary (Stored Integer)</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display15" SID="127">
+    <PortCounts in="1"/>
+    <P Name="Position">[650, 465, 740, 495]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display9" SID="128">
+    <PortCounts in="1"/>
+    <P Name="Position">[335, 305, 425, 335]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Format">binary (Stored Integer)</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Outport" Name="wcs1_offset_volt_out" SID="204">
+    <P Name="Position">[1325, 23, 1355, 37]</P>
+    <P Name="ZOrder">100000</P>
+  </Block>
+  <Block BlockType="Outport" Name="wcs2_offset_volt_out" SID="205">
+    <P Name="Position">[1325, 118, 1355, 132]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="DC torque_setpoint1" SID="206">
+    <P Name="Position">[1325, 213, 1355, 227]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="Stepper Config" SID="207">
+    <P Name="Position">[1325, 308, 1355, 322]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="Stepper Frequency1" SID="208">
+    <P Name="Position">[1325, 403, 1355, 417]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="DC PWM1" SID="209">
+    <P Name="Position">[1325, 498, 1355, 512]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="DC Frequency1" SID="210">
+    <P Name="Position">[1325, 593, 1355, 607]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">196</P>
+    <P Name="Src">103#out:1</P>
+    <P Name="Points">[40, 0]</P>
+    <Branch>
+      <P Name="ZOrder">195</P>
+      <P Name="Dst">128#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">194</P>
+      <P Name="Points">[0, -15]</P>
+      <P Name="Dst">102#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">183</P>
+    <P Name="Src">120#out:1</P>
+    <P Name="Dst">105#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">331</P>
+    <P Name="Src">202#out:1</P>
+    <P Name="Dst">113#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">197</P>
+    <P Name="Src">118#out:1</P>
+    <P Name="Dst">103#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">324</P>
+    <P Name="Src">195#out:1</P>
+    <P Name="Points">[492, 0; 0, 85]</P>
+    <P Name="Dst">115#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">DC PWM</P>
+    <P Name="ZOrder">338</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">114#out:1</P>
+    <P Name="Dst">209#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">189</P>
+    <P Name="Src">119#out:1</P>
+    <P Name="Dst">104#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">191</P>
+    <P Name="Src">113#out:1</P>
+    <P Name="Dst">107#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">325</P>
+    <P Name="Src">196#out:1</P>
+    <P Name="Points">[882, 0; 0, 310]</P>
+    <P Name="Dst">114#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">200</P>
+    <P Name="Src">106#out:1</P>
+    <P Name="Points">[36, 0]</P>
+    <Branch>
+      <P Name="ZOrder">199</P>
+      <P Name="Dst">124#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">198</P>
+      <P Name="Points">[0, -32; 149, 0; 0, 27]</P>
+      <P Name="Dst">102#in:4</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">wcs1_offset_volt</P>
+    <P Name="ZOrder">333</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">191#out:1</P>
+    <P Name="Dst">204#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">205</P>
+    <P Name="Src">102#out:1</P>
+    <P Name="Points">[40, 0]</P>
+    <Branch>
+      <P Name="ZOrder">204</P>
+      <P Name="Points">[0, 45]</P>
+      <P Name="Dst">127#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">203</P>
+      <P Name="Dst">126#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">202</P>
+      <P Name="Points">[0, -120]</P>
+      <P Name="Dst">116#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">208</P>
+    <P Name="Src">105#out:1</P>
+    <P Name="Points">[31, 0]</P>
+    <Branch>
+      <P Name="ZOrder">207</P>
+      <P Name="Dst">123#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">206</P>
+      <P Name="Points">[0, 24; 134, 0; 0, -29]</P>
+      <P Name="Dst">102#in:3</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">332</P>
+    <P Name="Src">203#out:1</P>
+    <P Name="Points">[793, 0; 0, -235]</P>
+    <P Name="Dst">117#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">328</P>
+    <P Name="Src">199#out:1</P>
+    <P Name="Dst">119#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">211</P>
+    <P Name="Src">104#out:1</P>
+    <P Name="Points">[31, 0]</P>
+    <Branch>
+      <P Name="ZOrder">210</P>
+      <P Name="Dst">122#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">209</P>
+      <P Name="Points">[0, -30; 124, 0; 0, 20]</P>
+      <P Name="Dst">102#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">214</P>
+    <P Name="Src">107#out:1</P>
+    <P Name="Points">[31, 0]</P>
+    <Branch>
+      <P Name="ZOrder">213</P>
+      <P Name="Dst">125#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">212</P>
+      <P Name="Points">[0, -32; 154, 0; 0, 27]</P>
+      <P Name="Dst">102#in:5</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">327</P>
+    <P Name="Src">198#out:1</P>
+    <P Name="Dst">118#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">215</P>
+    <P Name="Src">121#out:1</P>
+    <P Name="Dst">106#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">wcs2_offset_volt</P>
+    <P Name="ZOrder">334</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">190#out:1</P>
+    <P Name="Dst">205#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">329</P>
+    <P Name="Src">200#out:1</P>
+    <P Name="Dst">120#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">322</P>
+    <P Name="Src">193#out:1</P>
+    <P Name="Dst">191#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">326</P>
+    <P Name="Src">197#out:1</P>
+    <P Name="Points">[44, 0; 0, 360]</P>
+    <P Name="Dst">112#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">323</P>
+    <P Name="Src">194#out:1</P>
+    <P Name="Points">[491, 0; 0, 50]</P>
+    <P Name="Dst">190#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">DC Frequency</P>
+    <P Name="ZOrder">339</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">112#out:1</P>
+    <P Name="Dst">210#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">330</P>
+    <P Name="Src">201#out:1</P>
+    <P Name="Dst">121#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">Stepper Config</P>
+    <P Name="ZOrder">336</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">116#out:1</P>
+    <P Name="Dst">207#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">DC torque_setpoint</P>
+    <P Name="ZOrder">335</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">115#out:1</P>
+    <P Name="Dst">206#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">Stepper Frequency</P>
+    <P Name="ZOrder">337</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">117#out:1</P>
+    <P Name="Dst">208#in:1</P>
+  </Line>
+</System>

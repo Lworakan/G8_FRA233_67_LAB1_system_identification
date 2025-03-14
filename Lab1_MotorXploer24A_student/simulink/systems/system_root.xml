@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 2049, 1105]</P>
+  <P Name="Open">on</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">240</P>
+  <Block BlockType="Constant" Name="DC torque_setpoint" SID="110">
+    <P Name="Position">[290, 804, 395, 826]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">0</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">DC torque_setpoint</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Constant" Name="DIR" SID="111">
+    <P Name="Position">[340, 1160, 370, 1190]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">0</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">DIR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Display" Name="Display1" SID="90">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 360, 750, 390]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display16" SID="91">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 325, 750, 355]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display2" SID="92">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 395, 750, 425]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display3" SID="93">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 535, 750, 565]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display4" SID="94">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 430, 750, 460]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display5" SID="95">
+    <PortCounts in="1"/>
+    <P Name="Position">[885, 405, 975, 435]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display6" SID="96">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 465, 750, 495]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display7" SID="97">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 500, 750, 530]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display8" SID="98">
+    <PortCounts in="1"/>
+    <P Name="Position">[660, 290, 750, 320]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Constant" Name="EN" SID="129">
+    <P Name="Position">[340, 1220, 370, 1250]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">0</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">EN</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Gain" Name="Gain5" SID="213">
+    <P Name="Position">[90, 855, 170, 895]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Gain">65535/12</P>
+  </Block>
+  <Block BlockType="Reference" Name="Host Serial Rx1" SID="99">
+    <PortCounts out="9"/>
+    <P Name="Position">[295, 257, 460, 563]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">1.123</P>
+    <P Name="SourceBlock">amg_usbconverter_n_connect_lib/Host Serial Rx</P>
+    <P Name="SourceType">amg_usbconverter_n_connect</P>
+    <P Name="SourceProductName">aMG USB Converter N</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="conf">rx</P>
+      <P Name="port">COM5</P>
+      <P Name="baudrate">2000000</P>
+      <P Name="databits">8</P>
+      <P Name="parity">None</P>
+      <P Name="stopbit">1</P>
+      <P Name="flowcontrol">None</P>
+      <P Name="transfer">Non-Blocking</P>
+      <P Name="timeout">5</P>
+      <P Name="packetmode">Binary</P>
+      <P Name="enableinitialvalues">off</P>
+      <P Name="initialvalues">[]</P>
+      <P Name="binheader">&apos;45&apos;</P>
+      <P Name="binterminator">&apos;A&apos;</P>
+      <P Name="porttype_double">0</P>
+      <P Name="porttype_single">6</P>
+      <P Name="porttype_int8">0</P>
+      <P Name="porttype_uint8">0</P>
+      <P Name="porttype_int16">0</P>
+      <P Name="porttype_uint16">1</P>
+      <P Name="porttype_int32">1</P>
+      <P Name="porttype_uint32">0</P>
+      <P Name="asciiformat">&apos;%f,%f,%d,%d&apos;</P>
+      <P Name="rx_asciiterminator">LF (0x0A - &quot;\n&quot;)</P>
+      <P Name="tx_asciiterminator">CRLF (0x0D 0x0A - &quot;\r\n&quot;)</P>
+      <P Name="sampletime">-1</P>
+      <P Name="enablecustomportlabel">off</P>
+      <P Name="cinputportlabel">0</P>
+      <P Name="coutputportlabel">A</P>
+      <P Name="portpinstr">0</P>
+      <P Name="blockid">HostSerialRx1</P>
+      <P Name="inputporttype">[]</P>
+      <P Name="inputportwidth">[]</P>
+      <P Name="inputportlabel">{}</P>
+      <P Name="outputporttype">[3 1 1 1 1 1 1 5 6]</P>
+      <P Name="outputportwidth">[1 1 1 1 1 1 1 1 1]</P>
+      <P Name="outputportlabel">{&apos;READY&apos;,&apos;single&apos;,&apos;single&apos;,&apos;single&apos;,&apos;single&apos;,&apos;single&apos;,&apos;single&apos;,&apos;uint16&apos;,&apos;int32&apos;}</P>
+      <P Name="compat">0</P>
+      <P Name="optionstring">[]</P>
+      <P Name="autoport">&apos;COM5&apos;</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">wcs1</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">wcs1_raw_volt</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">wcs2_raw_volt</P>
+        <P Name="DataLogging">on</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="Name">wcs1</P>
+      </Port>
+      <Port Type="out" Index="5">
+        <P Name="Name">wcs2</P>
+      </Port>
+      <Port Type="out" Index="6">
+        <P Name="Name">pps</P>
+        <P Name="DataLogging">on</P>
+      </Port>
+      <Port Type="out" Index="7">
+        <P Name="Name">loadcell</P>
+      </Port>
+      <Port Type="out" Index="8">
+        <P Name="Name">rawAngle</P>
+      </Port>
+      <Port Type="out" Index="9">
+        <P Name="Name">pulses</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Host Serial Setup" SID="101">
+    <PortCounts/>
+    <P Name="Position">[805, 240, 965, 330]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">1.123</P>
+    <P Name="SourceBlock">amg_usbconverter_n_connect_lib/Host Serial Setup</P>
+    <P Name="SourceType">amg_usbconverter_n_connect</P>
+    <P Name="SourceProductName">aMG USB Converter N</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="conf">setup</P>
+      <P Name="port">COM5</P>
+      <P Name="baudrate">2000000</P>
+      <P Name="databits">8</P>
+      <P Name="parity">None</P>
+      <P Name="stopbit">1</P>
+      <P Name="flowcontrol">None</P>
+      <P Name="transfer">Blocking</P>
+      <P Name="timeout">2</P>
+      <P Name="packetmode">Binary</P>
+      <P Name="initialvalues">[]</P>
+      <P Name="binheader">&apos;7E 7E&apos;</P>
+      <P Name="binterminator">&apos;03 03&apos;</P>
+      <P Name="porttype_double">0</P>
+      <P Name="porttype_single">1</P>
+      <P Name="porttype_int8">0</P>
+      <P Name="porttype_uint8">0</P>
+      <P Name="porttype_int16">0</P>
+      <P Name="porttype_uint16">0</P>
+      <P Name="porttype_int32">0</P>
+      <P Name="porttype_uint32">2</P>
+      <P Name="asciiformat">&apos;%d %u %x&apos;</P>
+      <P Name="rx_asciiterminator">CRLF (0x0D 0x0A - &quot;\r\n&quot;)</P>
+      <P Name="tx_asciiterminator">CRLF (0x0D 0x0A - &quot;\r\n&quot;)</P>
+      <P Name="sampletime">-1</P>
+      <P Name="enablecustomportlabel">off</P>
+      <P Name="cinputportlabel">0</P>
+      <P Name="coutputportlabel">A</P>
+      <P Name="portpinstr">0</P>
+      <P Name="blockid">HostSerialSetup</P>
+      <P Name="inputporttype">[]</P>
+      <P Name="inputportwidth">[]</P>
+      <P Name="inputportlabel">{}</P>
+      <P Name="outputporttype">[]</P>
+      <P Name="outputportwidth">[]</P>
+      <P Name="outputportlabel">{}</P>
+      <P Name="compat">0</P>
+      <P Name="optionstring">[]</P>
+      <P Name="autoport">&apos;COM5&apos;</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Host Serial Tx" SID="130">
+    <PortCounts in="7"/>
+    <P Name="Position">[1655, 657, 1895, 1333]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="LibraryVersion">1.123</P>
+    <P Name="SourceBlock">amg_usbconverter_n_connect_lib/Host Serial Tx</P>
+    <P Name="SourceType">amg_usbconverter_n_connect</P>
+    <P Name="SourceProductName">aMG USB Converter N</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="conf">tx</P>
+      <P Name="port">COM5</P>
+      <P Name="baudrate">2000000</P>
+      <P Name="databits">8</P>
+      <P Name="parity">None</P>
+      <P Name="stopbit">1</P>
+      <P Name="flowcontrol">None</P>
+      <P Name="transfer">Blocking</P>
+      <P Name="timeout">2</P>
+      <P Name="packetmode">Binary</P>
+      <P Name="initialvalues">[]</P>
+      <P Name="binheader">&apos;45&apos;</P>
+      <P Name="binterminator">&apos;A&apos;</P>
+      <P Name="porttype_double">0</P>
+      <P Name="porttype_single">3</P>
+      <P Name="porttype_int8">0</P>
+      <P Name="porttype_uint8">1</P>
+      <P Name="porttype_int16">0</P>
+      <P Name="porttype_uint16">0</P>
+      <P Name="porttype_int32">3</P>
+      <P Name="porttype_uint32">0</P>
+      <P Name="asciiformat">&apos;%d,%f&apos;</P>
+      <P Name="rx_asciiterminator">CRLF (0x0D 0x0A - &quot;\r\n&quot;)</P>
+      <P Name="tx_asciiterminator">CRLF (0x0D 0x0A - &quot;\r\n&quot;)</P>
+      <P Name="sampletime">-1</P>
+      <P Name="enablecustomportlabel">off</P>
+      <P Name="cinputportlabel">0</P>
+      <P Name="coutputportlabel">A</P>
+      <P Name="portpinstr">0</P>
+      <P Name="blockid">HostSerialTx</P>
+      <P Name="inputporttype">[1 1 1 3 6 6 6]</P>
+      <P Name="inputportwidth">[1 1 1 1 1 1 1]</P>
+      <P Name="inputportlabel">{&apos;single&apos;,&apos;single&apos;,&apos;single&apos;,&apos;uint8&apos;,&apos;int32&apos;,&apos;int32&apos;,&apos;int32&apos;}</P>
+      <P Name="outputporttype">[]</P>
+      <P Name="outputportwidth">[]</P>
+      <P Name="outputportlabel">{}</P>
+      <P Name="compat">0</P>
+      <P Name="optionstring">[]</P>
+      <P Name="autoport">&apos;COM5&apos;</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="M0" SID="131">
+    <P Name="Position">[340, 980, 370, 1010]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">M0</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Constant" Name="M1" SID="132">
+    <P Name="Position">[340, 1040, 370, 1070]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">M1</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Constant" Name="M2" SID="133">
+    <P Name="Position">[340, 1100, 370, 1130]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">M2</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Constant" Name="PWM Frequency" SID="226">
+    <P Name="Position">[340, 920, 370, 950]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">1000</P>
+  </Block>
+  <Block BlockType="Step" Name="Step" SID="236">
+    <P Name="Position">[-5, 860, 25, 890]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="After">6</P>
+    <P Name="SampleTime">0</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">step6V</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Constant" Name="Stepper Frequency" SID="134">
+    <P Name="Position">[290, 1286, 395, 1304]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">5000</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Stepper Frequency</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="SubSystem" Name="Subsystem" SID="192">
+    <PortCounts in="11" out="7"/>
+    <P Name="Position">[515, 659, 1640, 1331]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">wcs1_offset_volt</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">wcs2_offset_volt</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">DC torque_setpoint</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">Stepper Config</P>
+      </Port>
+      <Port Type="out" Index="5">
+        <P Name="PropagatedSignals">Stepper Frequency</P>
+      </Port>
+      <Port Type="out" Index="6">
+        <P Name="PropagatedSignals">DC PWM</P>
+      </Port>
+      <Port Type="out" Index="7">
+        <P Name="PropagatedSignals">DC Frequency</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_192"/>
+  </Block>
+  <Block BlockType="Gain" Name="rad" SID="215">
+    <P Name="Position">[800, 535, 830, 565]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Gain">2*pi/8192</P>
+  </Block>
+  <Block BlockType="Gain" Name="rad/s" SID="100">
+    <P Name="Position">[805, 405, 835, 435]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Gain">2*pi/8192</P>
+  </Block>
+  <Block BlockType="Constant" Name="wcs1_offset_volt" SID="135">
+    <P Name="Position">[290, 684, 395, 706]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">0.425</P>
+    <P Name="OutDataTypeStr">single</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">wcs1_offset_volt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Constant" Name="wcs2_offset_volt" SID="136">
+    <P Name="Position">[290, 744, 395, 766]</P>
+    <P Name="ZOrder">100000</P>
+    <P Name="Value">0.318</P>
+    <P Name="OutDataTypeStr">single</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">wcs2_offset_volt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Line>
+    <P Name="Name">wcs1_raw_volt</P>
+    <P Name="ZOrder">165</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">99#out:2</P>
+    <P Name="Dst">98#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">wcs2_raw_volt</P>
+    <P Name="ZOrder">166</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">99#out:3</P>
+    <P Name="Dst">91#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">loadcell</P>
+    <P Name="ZOrder">167</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">99#out:7</P>
+    <P Name="Dst">96#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">wcs2</P>
+    <P Name="ZOrder">168</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">99#out:5</P>
+    <P Name="Dst">92#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">rawAngle</P>
+    <P Name="ZOrder">169</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">99#out:8</P>
+    <P Name="Dst">97#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">170</P>
+    <P Name="Src">100#out:1</P>
+    <P Name="Dst">95#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">pps</P>
+    <P Name="ZOrder">173</P>
+    <P Name="Src">99#out:6</P>
+    <P Name="Points">[102, 0]</P>
+    <Branch>
+      <P Name="ZOrder">172</P>
+      <P Name="Dst">94#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">171</P>
+      <P Name="Labels">[1, 1]</P>
+      <P Name="Points">[0, -25]</P>
+      <P Name="Dst">100#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">wcs1</P>
+    <P Name="ZOrder">174</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">99#out:4</P>
+    <P Name="Dst">90#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">pulses</P>
+    <P Name="ZOrder">175</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">99#out:9</P>
+    <P Name="Points">[113, 0]</P>
+    <Branch>
+      <P Name="ZOrder">346</P>
+      <P Name="Points">[0, 39; 197, 0; 0, -39]</P>
+      <P Name="Dst">215#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">345</P>
+      <P Name="Dst">93#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">wcs1_offset_volt</P>
+    <P Name="ZOrder">322</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">135#out:1</P>
+    <P Name="Dst">192#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">wcs2_offset_volt</P>
+    <P Name="ZOrder">323</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">136#out:1</P>
+    <P Name="Dst">192#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">DC torque_setpoint</P>
+    <P Name="ZOrder">324</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">110#out:1</P>
+    <P Name="Dst">192#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">M0</P>
+    <P Name="ZOrder">327</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">131#out:1</P>
+    <P Name="Dst">192#in:6</P>
+  </Line>
+  <Line>
+    <P Name="Name">M1</P>
+    <P Name="ZOrder">328</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">132#out:1</P>
+    <P Name="Dst">192#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">M2</P>
+    <P Name="ZOrder">329</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">133#out:1</P>
+    <P Name="Dst">192#in:8</P>
+  </Line>
+  <Line>
+    <P Name="Name">DIR</P>
+    <P Name="ZOrder">330</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">111#out:1</P>
+    <P Name="Dst">192#in:9</P>
+  </Line>
+  <Line>
+    <P Name="Name">EN</P>
+    <P Name="ZOrder">331</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">129#out:1</P>
+    <P Name="Dst">192#in:10</P>
+  </Line>
+  <Line>
+    <P Name="Name">Stepper Frequency</P>
+    <P Name="ZOrder">332</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">134#out:1</P>
+    <P Name="Dst">192#in:11</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">333</P>
+    <P Name="Src">192#out:1</P>
+    <P Name="Dst">130#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">334</P>
+    <P Name="Src">192#out:2</P>
+    <P Name="Dst">130#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">335</P>
+    <P Name="Src">192#out:3</P>
+    <P Name="Dst">130#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">336</P>
+    <P Name="Src">192#out:4</P>
+    <P Name="Dst">130#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">337</P>
+    <P Name="Src">192#out:5</P>
+    <P Name="Dst">130#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">338</P>
+    <P Name="Src">192#out:6</P>
+    <P Name="Dst">130#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">339</P>
+    <P Name="Src">192#out:7</P>
+    <P Name="Dst">130#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">344</P>
+    <P Name="Src">213#out:1</P>
+    <P Name="Dst">192#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">441</P>
+    <P Name="Src">226#out:1</P>
+    <P Name="Dst">192#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">step6V</P>
+    <P Name="ZOrder">454</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">236#out:1</P>
+    <P Name="Dst">213#in:1</P>
+  </Line>
+  <Annotation SID="89">
+    <P Name="Name">Output to Nucleo-G474RE</P>
+    <P Name="Position">[245, 631, 1926, 1352]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.333333, 0.666667, 1.000000]</P>
+    <P Name="BackgroundColor">[0.333333, 0.666667, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">629</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="88">
+    <P Name="Name">Input From Nucleo-G474RE</P>
+    <P Name="Position">[249, 214, 1001, 609]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.576471, 0.800000, 0.329412]</P>
+    <P Name="BackgroundColor">[0.576471, 0.800000, 0.329412]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">628</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="19">
+    <P Name="Name">MotorXploler Interface</P>
+    <P Name="Position">[187, 168, 1992, 1371]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">627</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+</System>
